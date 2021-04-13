@@ -1,5 +1,5 @@
 import discord
-from .token from token 
+from bot_token import token
 from discord.ext import commands
 
 client = commands.Bot(command_prefix = '.')
