@@ -7,7 +7,10 @@ class Services(commands.Cog):
 
 
     # Events
-
+    @commands.Cog.listener()
+    async def on_ready(self):
+        await self.client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="for your requests"))
+        print('Sebas is Ready.')    
     # Commands
 
 def setup(client):
